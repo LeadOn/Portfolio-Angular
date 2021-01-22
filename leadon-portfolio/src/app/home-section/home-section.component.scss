@@ -1,0 +1,33 @@
+@import "../../assets/styles/custom-classes.scss";
+
+.hello-block {
+  background-color: $font-secondary-color;
+  padding: 8px 32px;
+}
+
+.name {
+  font-size: 32px;
+  display: block;
+}
+
+.name-desc {
+  font-size: 18px;
+}
+
+.ln-download-btn {
+  background-color: $font-secondary-color;
+  color: $font-primary-color;
+  border-radius: 10px;
+  padding: 16px 32px;
+  width: 180px;
+  margin-right: 20px;
+}
+
+.ln-portfolio-btn {
+  background-color: transparent;
+  color: $font-primary-color;
+  border: 1px solid $font-primary-color;
+  border-radius: 10px;
+  padding: 16px 32px;
+  width: 180px;
+}

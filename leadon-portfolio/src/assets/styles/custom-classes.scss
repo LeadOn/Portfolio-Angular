@@ -1,0 +1,17 @@
+@import "colors.scss";
+
+.ln-dark {
+  background-color: $nav-bg-color;
+}
+
+.ln-orange {
+  background-color: $font-secondary-color !important;
+}
+
+.ln-text-orange {
+  color: $font-secondary-color;
+}
+
+.ln-text-primary {
+  color: $font-primary-color !important;
+}

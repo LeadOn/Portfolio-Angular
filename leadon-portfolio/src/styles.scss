@@ -1,0 +1,26 @@
+// Colors file
+@import "assets/styles/colors.scss";
+
+// Poppins font from Google CDN
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background: $bg-color;
+  color: $font-primary-color;
+  font-family: Poppins;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+section {
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}

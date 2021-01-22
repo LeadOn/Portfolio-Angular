@@ -1,0 +1,23 @@
+@import "../../assets/styles/custom-classes.scss";
+
+.main-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.next-section-btn {
+  border: 1px solid $font-secondary-color;
+  border-radius: 32px;
+  padding: 24px 8px;
+}
+
+.next-section-block {
+  position: absolute;
+  bottom: -95%;
+  left: 50%;
+  margin-left: -21px;
+}
+
+.secondary-text {
+  font-weight: lighter;
+}

@@ -18,3 +18,20 @@
 .mt-custom {
   margin-top: 7rem !important;
 }
+
+.project {
+  background-image: url("../../assets/img/sheep.jpg");
+  height: 100px;
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-desc {
+  font-weight: lighter;
+  font-size: 14px;
+}

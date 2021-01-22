@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeSectionComponent } from './home-section/home-section.component';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeSectionComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent,
+    PortfolioComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

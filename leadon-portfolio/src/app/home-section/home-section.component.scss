@@ -1,5 +1,23 @@
 @import "../../assets/styles/custom-classes.scss";
 
+#home-section {
+  background-image: url("../../assets/img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 383px) {
+  .ln-dl-btn {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 392px) {
+  .ln-dl-btn {
+    margin-right: 8px;
+  }
+}
+
 .test-bg {
   background-color: black;
 }
@@ -15,7 +33,7 @@
   color: $font-primary-color;
   width: 180px;
   border-radius: 10px;
-  padding: 12px 32px;
+  padding: 16px 32px;
 }
 
 .ln-portfolio-btn {
@@ -24,7 +42,7 @@
   border: 1px solid $font-primary-color;
   border-radius: 10px;
   width: 180px;
-  padding: 12px 32px;
+  padding: 16px 32px;
 }
 
 .vertical-center {
@@ -37,20 +55,21 @@
 
 .name {
   font-weight: Bold;
-  font-size: 38px;
+  font-size: 50px;
 }
 
 .name-desc {
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .next-section-btn {
   border: 1px solid $font-secondary-color;
   border-radius: 32px;
   padding: 24px 8px;
+  transition: all 0.2s ease-in-out;
 }
 
-.mt-custom {
-  margin-top: 7rem !important;
+.next-section-btn:hover {
+  transform: scale(1.2);
 }

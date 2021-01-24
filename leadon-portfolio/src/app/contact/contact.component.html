@@ -1,41 +1,20 @@
-<section id="contact" class="container">
-  <div class="row d-flex justify-content-center">
-    <div class="col"></div>
-    <div class="col-10 mt-4">
-      <div class="text-center">
-        <span class="main-text">Contact me</span>
-      </div>
+<section id="contact" class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <span class="d-block main-text mt-5">Contact me</span>
 
-      <div class="text-center mt-4">
-        <span class="secondary-text"
-          >If you want to get in touch with me, just fill this form, or send me
-          a message on one of my social networks!</span
+        <span class="d-block secondary-text mt-3"
+          >You want to get in touch with me? Fill the form, or go check one of
+          my social networks!</span
         >
-      </div>
 
-      <form class="mt-5">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message"></textarea>
-        </div>
-        <button type="submit" class="btn ln-btn">Submit</button>
-      </form>
-
-      <div class="row mt-5">
-        <div class="col-2">
-          <div class="phone-icon text-center">
+        <div class="mt-4 row network">
+          <div class="col-1 network-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="24"
+              height="24"
               fill="currentColor"
               class="bi bi-telephone"
               viewBox="0 0 16 16"
@@ -45,26 +24,19 @@
               />
             </svg>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="row">
-            <span class="muted">Call me</span>
-          </div>
-
-          <div class="row">
-            <span>+33 0 00 00 00 00</span>
+          <div class="col">
+            <span class="d-block muted">Call me</span>
+            <span class="d-block">+33 0 00 00 00 00</span>
           </div>
         </div>
-      </div>
 
-      <div class="row mt-3">
-        <div class="col-2">
-          <div class="phone-icon text-center">
+        <div class="mt-4 row network">
+          <div class="col-1 network-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="24"
+              height="24"
               fill="currentColor"
               class="bi bi-envelope"
               viewBox="0 0 16 16"
@@ -74,28 +46,46 @@
               />
             </svg>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="row">
-            <span class="muted">Email me</span>
-          </div>
-
-          <div class="row">
-            <span>test@test.test</span>
+          <div class="col">
+            <span class="d-block muted">Email</span>
+            <span class="d-block">email@test.test</span>
           </div>
         </div>
-      </div>
 
-      <p class="mt-4 text-center">Find me on</p>
-
-      <div class="row mt-4">
-        <div class="col-2">
-          <div class="phone-icon text-center">
+        <div class="mt-4 row network">
+          <div class="col-1 network-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-geo-alt"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+              />
+              <path
+                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+              />
+            </svg>
+          </div>
+
+          <div class="col">
+            <span class="d-block muted">Location</span>
+            <span class="d-block">France</span>
+          </div>
+        </div>
+
+        <span class="d-block mt-5">Find me on</span>
+
+        <div class="mt-4 row network">
+          <div class="col-1 network-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
               fill="currentColor"
               class="bi bi-linkedin"
               viewBox="0 0 16 16"
@@ -105,19 +95,53 @@
               />
             </svg>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="row">
-            <span class="muted">LinkedIn</span>
+          <div class="col">
+            <span class="d-block muted">LinkedIn</span>
+            <span class="d-block"
+              >linkedin.com/in/valentin-virot-ba8931193/</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <span class="d-block main-text mt-5">Drop a Line</span>
+
+        <div class="row mt-4">
+          <div class="col">
+            <input type="text" class="ln-input" placeholder="Name" />
           </div>
 
-          <div class="row">
-            <span>test@test.test</span>
+          <div class="col">
+            <input type="email" class="ln-input" placeholder="Email" />
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col">
+            <input type="text" class="ln-input" placeholder="Phone" />
+          </div>
+
+          <div class="col">
+            <input type="text" class="ln-input" placeholder="Company" />
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col">
+            <textarea class="ln-input" placeholder="Message"></textarea>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col">
+            <a href="#" class="btn ln-btn">Submit</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="col"></div>
   </div>
+
+  <br />
 </section>

@@ -1,5 +1,9 @@
 @import "../../assets/styles/custom-classes.scss";
 
+#contact {
+  background-color: #060606;
+}
+
 .main-text {
   font-size: 20px;
   font-weight: 600;
@@ -35,4 +39,20 @@
 
 .muted {
   color: #6b6b6b;
+}
+
+.network-icon {
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #333333;
+}
+
+.ln-input {
+  background-color: black;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  width: 100%;
+  color: white;
 }

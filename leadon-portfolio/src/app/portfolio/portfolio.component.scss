@@ -28,6 +28,14 @@
   height: 200px;
 }
 
+.portfolio {
+  background-image: url("../../assets/img/portfolio.png");
+}
+
+.portfolio:hover {
+  background: $font-secondary-color;
+}
+
 .project:hover {
   background: $font-secondary-color;
 

@@ -21,17 +21,35 @@
 
 .project {
   background-image: url("../../assets/img/sheep.jpg");
-  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
   backdrop-filter: blur(8px);
   border-radius: 10px;
+  height: 150px;
+}
+
+.project:hover {
+  background: $font-secondary-color;
+
+  .project-name {
+    color: $font-primary-color;
+  }
+
+  .project-desc {
+    color: $font-primary-color;
+  }
 }
 
 .project-name {
   font-size: 18px;
   font-weight: 600;
+  color: transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-desc {
   font-weight: lighter;
   font-size: 14px;
+  color: transparent;
+  transition: all 0.2s ease-in-out;
 }

@@ -1,5 +1,9 @@
 @import "../../assets/styles/custom-classes.scss";
 
+.profile-pic {
+  border-radius: 10px;
+}
+
 .main-text {
   font-size: 20px;
   font-weight: 600;
@@ -17,4 +21,16 @@
 
 .mt-custom {
   margin-top: 7rem !important;
+}
+
+.bg-vs {
+  background-color: #68217a !important;
+}
+
+.bg-sn {
+  background-color: #81b5a1 !important;
+}
+
+.bg-azure {
+  background-color: #0088d2 !important;
 }

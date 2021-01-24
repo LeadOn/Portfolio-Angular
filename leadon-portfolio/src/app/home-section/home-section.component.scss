@@ -4,6 +4,10 @@
   background-image: url("../../assets/img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 383px) {
@@ -72,4 +76,8 @@
 
 .next-section-btn:hover {
   transform: scale(1.2);
+}
+
+.mt-custom {
+  margin-top: 15% !important;
 }

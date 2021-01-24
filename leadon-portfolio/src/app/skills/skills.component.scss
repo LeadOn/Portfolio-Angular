@@ -20,10 +20,37 @@
   margin-top: 7rem !important;
 }
 
-.skill {
+.skill:hover {
   background-color: $font-secondary-color;
+
+  .skill-icon {
+    background-color: $font-primary-color;
+  }
+
+  .skill-icon svg {
+    fill: black;
+  }
+
+  .skill-arrow svg {
+    fill: white;
+  }
+}
+
+.skill {
+  background-color: $skill-bg;
   padding: 20px 8px;
   border-radius: 10px;
   font-weight: lighter;
   font-size: 20px;
+  color: $font-primary-color;
+}
+
+.skill-icon {
+  background-color: $bg-color;
+  border-radius: 50%;
+  padding: 12px 14px;
+}
+
+.skill-name {
+  font-weight: lighter;
 }

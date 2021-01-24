@@ -5,10 +5,11 @@
   font-weight: 600;
 }
 
-.next-section-btn {
-  border: 1px solid $font-secondary-color;
-  border-radius: 32px;
-  padding: 24px 8px;
+.next-section-line {
+  width: 1px;
+  height: 80px;
+  border-right: 1px dashed #c94d29;
+  padding: 0;
 }
 
 .secondary-text {

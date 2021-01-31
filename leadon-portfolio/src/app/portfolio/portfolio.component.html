@@ -6,13 +6,27 @@
     >
   </div>
 
+  <span class="d-block text-center mt-5" *ngIf="dataLoaded == false"
+    >Loading data from GitHub API...</span
+  >
+
+  <span
+    class="d-block text-center mt-5"
+    *ngIf="repos != null && repos.length == 0"
+    >No projects are present in my GitHub for now!</span
+  >
+
   <div class="row mt-5">
-    <div class="col-sm mb-3 mb-md-0">
+    <div class="col-sm mb-3 mb-md-0" *ngFor="let repo of repos">
       <div class="project p-2 text-center portfolio">
-        <span class="project-name mt-1 d-block">LeadOn's Portfolio</span>
-        <span class="project-desc mt-2 d-block">Angular/Bootstrap 5</span>
-        <span class="project-desc mt-3 d-block"
-          >Developing this website from scratch.</span
+        <span class="project-name mt-1 d-block">{{ repo.name }}</span>
+        <span class="project-desc mt-2 d-block">{{ repo.language }}</span>
+        <span class="project-desc mt-3 d-block">{{ repo.description }}</span>
+        <a
+          href="{{ repo.html_url }}"
+          target="_blank"
+          class="project-desc mt-3 d-block"
+          >GitHub Link</a
         >
       </div>
     </div>

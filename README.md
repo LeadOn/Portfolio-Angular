@@ -1,27 +1,16 @@
-# LeadonPortfolio
+# Portfolio - Angular 11
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+This project is my own portfolio, done using Angular 11 / Bootstrap 5.0.0-beta1, and running live on [my website](https://www.valentinvirot.fr).
+It's not using every Angular aspects right now. It's really overkill to use it, especially when you check the content of it, but I've choosed to do it that way in order to have a easily maintainable solution in the long term.
 
-## Development server
+Projects are dynamically loaded from GitHub, using GitHub's API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to run it?
 
-## Code scaffolding
+Just type `npm install` to get all dependencies, and then use `ng serve` to run it locally.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Can I use it for my own website?
 
-## Build
+If this repo is public, it's for you to be able to clone/fork my project and use it for your own website. Just credit me somewhere in your site / code, as a thanks for my work :)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+You can contact me using my [my website](https://www.valentinvirot.fr), if you have some question about it. Have fun!

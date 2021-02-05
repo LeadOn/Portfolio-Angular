@@ -15,10 +15,8 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.github.getRepos().subscribe(
       (data) => {
-        data.forEach((repo) => {
-          this.dataLoaded = true;
-          this.repos = data;
-        });
+        this.repos = data;
+        this.dataLoaded = true;
       },
       (err) => {
         console.error(err);

@@ -5,4 +5,5 @@ export interface Repository {
   description: string;
   language: string;
   updated_at: Date;
+  created_at: Date;
 }

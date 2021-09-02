@@ -1,5 +1,9 @@
 @import "../../assets/styles/custom-classes.scss";
 
+.link-decoration-none a {
+  text-decoration: none !important;
+}
+
 .main-text {
   font-size: 20px;
   font-weight: 600;

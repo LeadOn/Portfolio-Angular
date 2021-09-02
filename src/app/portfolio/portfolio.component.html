@@ -17,18 +17,14 @@
   >
 
   <div class="row mt-5">
-    <div class="col-sm mb-3 mb-md-0" *ngFor="let repo of repos">
-      <div class="project p-2 text-center portfolio">
-        <span class="project-name mt-1 d-block">{{ repo.name }}</span>
-        <span class="project-desc mt-2 d-block">{{ repo.language }}</span>
-        <span class="project-desc mt-3 d-block">{{ repo.description }}</span>
-        <a
-          href="{{ repo.html_url }}"
-          target="_blank"
-          class="project-desc mt-3 d-block"
-          >GitHub Link</a
-        >
-      </div>
+    <div class="col-sm mb-3 link-decoration-none" *ngFor="let repo of repos">
+      <a href="{{ repo.html_url }}" target="_blank">
+        <div class="project p-2 text-center portfolio">
+          <span class="project-name mt-1 d-block">{{ repo.name }}</span>
+          <span class="project-desc mt-2 d-block">{{ repo.language }}</span>
+          <span class="project-desc mt-3 d-block">{{ repo.description }}</span>
+        </div>
+      </a>
     </div>
   </div>
 

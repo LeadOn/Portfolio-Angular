@@ -1,5 +1,9 @@
 @import "../../assets/styles/custom-classes.scss";
 
+.modal-content {
+  background-color: $skill-bg;
+}
+
 .main-text {
   font-size: 20px;
   font-weight: 600;

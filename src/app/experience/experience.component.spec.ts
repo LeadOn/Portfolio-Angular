@@ -11,9 +11,7 @@ describe('ExperienceComponent', () => {
       declarations: [ ExperienceComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ExperienceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

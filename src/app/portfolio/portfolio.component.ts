@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GithubService } from '../services/github.service';
+import { Repository } from '../interfaces/Repository';
+import { GithubService } from '../services/github/github.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,7 +9,7 @@ import { GithubService } from '../services/github.service';
 })
 export class PortfolioComponent implements OnInit {
   dataLoaded = false;
-  repos = [];
+  repos: Repository[] = [];
 
   constructor(private github: GithubService) {}
 

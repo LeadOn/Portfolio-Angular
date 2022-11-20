@@ -11,9 +11,7 @@ describe('PortfolioComponent', () => {
       declarations: [ PortfolioComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(PortfolioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

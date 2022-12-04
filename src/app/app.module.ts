@@ -3,27 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ContactComponent } from './contact/contact.component';
+
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { HomeWelcomeComponent } from './home/components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AboutComponent,
     HomeComponent,
-    ExperienceComponent,
-    PortfolioComponent,
-    SkillsComponent,
-    ContactComponent,
+    HomeWelcomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HomeWelcomeComponent } from './home/components/welcome/welcome.component';
+import { HomeAboutComponent } from './home/components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeWelcomeComponent } from './home/components/welcome/welcome.componen
     NavbarComponent,
     HomeComponent,
     HomeWelcomeComponent,
+    HomeAboutComponent,
   ],
   imports: [
     BrowserModule,

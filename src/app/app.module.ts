@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeWelcomeComponent } from './home/components/welcome/welcome.component';
 import { HomeAboutComponent } from './home/components/about/about.component';
 import { HomeExperienceComponent } from './home/components/experience/experience.component';
+import { HomeSkillsComponent } from './home/components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomeExperienceComponent } from './home/components/experience/experience
     HomeWelcomeComponent,
     HomeAboutComponent,
     HomeExperienceComponent,
+    HomeSkillsComponent,
   ],
   imports: [
     BrowserModule,

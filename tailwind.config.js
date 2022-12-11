@@ -12,6 +12,7 @@ module.exports = {
     colors: {
       primary: "#424549",
       primaryDarker: "#282b30",
+      primaryDarkerer: "#111111",
       secondary: "#c94d29",
       csharp: "#4e1268",
       servicenow: "#81b5a1",

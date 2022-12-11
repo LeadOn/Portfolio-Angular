@@ -11,6 +11,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HomeWelcomeComponent } from './home/components/welcome/welcome.component';
 import { HomeAboutComponent } from './home/components/about/about.component';
+import { HomeExperienceComponent } from './home/components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeAboutComponent } from './home/components/about/about.component';
     HomeComponent,
     HomeWelcomeComponent,
     HomeAboutComponent,
+    HomeExperienceComponent,
   ],
   imports: [
     BrowserModule,

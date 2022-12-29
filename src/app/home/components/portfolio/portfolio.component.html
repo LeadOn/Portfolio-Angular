@@ -1,0 +1,33 @@
+<section
+  class="flex flex-col items-center justify-center text-white p-8 md:px-6 lg:px-32 xl:px-64"
+  id="portfolio"
+>
+  <div class="text-center">
+    <span class="block text-xl font-bold">Portfolio</span>
+    <span class="block mt-4"
+      >Here are some of my projects, directly retrieved from my
+      <a target="_blank" href="https://github.com/LeadOn">GitHub</a>
+      account.</span
+    >
+    <span class="hidden md:block mt-2 text-sm"
+      >(You just have to hover each project to see it's description 😊)</span
+    >
+  </div>
+
+  <div class="text-center mt-4 text-secondary" *ngIf="apiError == true">
+    <span class="block"
+      >An error happened while getting projects from GitHub. Please try again
+      later.</span
+    >
+  </div>
+
+  <div
+    class="mt-4 grid grid-cols-1 md:grid-cols-2 md:gap-x-2 gap-y-2 w-full"
+    *ngIf="apiError == false"
+  >
+    <app-project-card
+      *ngFor="let repo of repositories"
+      [repository]="repo"
+    ></app-project-card>
+  </div>
+</section>

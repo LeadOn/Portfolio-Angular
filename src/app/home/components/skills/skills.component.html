@@ -1,0 +1,18 @@
+<section
+  class="flex flex-col items-center justify-center text-white p-8 md:px-6 lg:px-32"
+  id="skills"
+>
+  <div class="text-center">
+    <span class="block text-xl font-bold">Skills</span>
+    <span class="block mt-4"
+      >Here are some of the skills that I've gained over the years.</span
+    >
+  </div>
+
+  <div class="mt-4 grid md:grid-cols-3 gap-4">
+    <app-skill-card
+      *ngFor="let skill of skills"
+      [skill]="skill"
+    ></app-skill-card>
+  </div>
+</section>

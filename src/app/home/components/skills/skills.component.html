@@ -9,74 +9,10 @@
     >
   </div>
 
-  <div
-    class="mt-4 flex flex-col lg:flex-row lg:flex-wrap w-full space-y-2 lg:space-x-2"
-  >
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="codeIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">Angular</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="codeIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">Angular</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="cloudIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">Azure</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="agileIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">Agile</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="mobileIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">Xamarin</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="mobileIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">PWA</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon
-        [icon]="databaseIcon"
-        class="p-4 rounded-full bg-black"
-      ></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">SQL</span>
-    </div>
-
-    <div
-      class="bg-primaryDarkerer p-6 rounded-lg lg:grow transition transition-all ease-in-out duration-200 hover:bg-secondary"
-    >
-      <fa-icon [icon]="networkIcon" class="p-4 rounded-full bg-black"></fa-icon>
-
-      <span class="inline-block ml-4 text-xl">Micro-Services</span>
-    </div>
+  <div class="mt-4 grid md:grid-cols-3 gap-4">
+    <app-skill-card
+      *ngFor="let skill of skills"
+      [skill]="skill"
+    ></app-skill-card>
   </div>
 </section>

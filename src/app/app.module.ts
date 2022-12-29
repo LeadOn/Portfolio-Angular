@@ -13,6 +13,9 @@ import { HomeWelcomeComponent } from './home/components/welcome/welcome.componen
 import { HomeAboutComponent } from './home/components/about/about.component';
 import { HomeExperienceComponent } from './home/components/experience/experience.component';
 import { HomeSkillsComponent } from './home/components/skills/skills.component';
+import { SkillCardComponent } from './shared/skill-card/skill-card.component';
+import { HomePortfolioComponent } from './home/components/portfolio/portfolio.component';
+import { ProjectCardComponent } from './shared/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { HomeSkillsComponent } from './home/components/skills/skills.component';
     HomeAboutComponent,
     HomeExperienceComponent,
     HomeSkillsComponent,
+    SkillCardComponent,
+    HomePortfolioComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

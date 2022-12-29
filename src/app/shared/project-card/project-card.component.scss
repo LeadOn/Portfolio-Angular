@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+  .project {
+    color: transparent;
+    background-color: transparent;
+    background-image: url("../../../assets/img/background.jpg");
+    transition: all 0.2s ease-in-out;
+  }
+
+  .project:hover {
+    color: white;
+    background-image: none;
+    background-color: #c94d29;
+  }
+}

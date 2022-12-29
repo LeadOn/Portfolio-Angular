@@ -1,0 +1,60 @@
+<div
+  class="project bg-secondary rounded-lg h-48 backdrop-blur-lg bg-no-repeat bg-cover text-center p-8"
+>
+  <span
+    class="block text-lg bold"
+    *ngIf="repository != null && repository.name != null"
+    >{{ repository.name }}</span
+  >
+  <span
+    class="block text-lg bold"
+    *ngIf="repository == null || repository.name == null"
+    >No name available.</span
+  >
+
+  <span
+    class="block text-xs"
+    *ngIf="
+      repository != null &&
+      repository.topicsTransformed != null &&
+      repository.topicsTransformed.length > 0
+    "
+    >{{ repository.topicsTransformed.join(", ") }}</span
+  >
+
+  <span
+    class="block text-xs"
+    *ngIf="
+      repository == null ||
+      repository.topicsTransformed == null ||
+      repository.topicsTransformed.length == 0
+    "
+    >No topics set</span
+  >
+
+  <span
+    class="block mt-2 text-sm"
+    *ngIf="repository != null && repository.description != null"
+    >{{ repository.description }}</span
+  >
+  <span
+    class="block mt-2 text-sm"
+    *ngIf="repository == null || repository.description == null"
+    >No description set.</span
+  >
+
+  <a
+    class="block mt-4"
+    *ngIf="repository != null && repository.html_url != null"
+    href="{{ repository.html_url }}"
+    target="_blank"
+  >
+    <fa-icon [icon]="arrowIcon"></fa-icon>
+  </a>
+
+  <span
+    class="block mt-4"
+    *ngIf="repository == null || repository.html_url == null"
+    >No project URL set.</span
+  >
+</div>

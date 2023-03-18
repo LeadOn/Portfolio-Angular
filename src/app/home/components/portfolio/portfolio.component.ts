@@ -16,7 +16,6 @@ export class HomePortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.github.getRepos().subscribe(
       (data) => {
-        console.log(data);
         this.repositories = data;
       },
       (err) => {

@@ -22,6 +22,7 @@ import { HomeExperienceComponent } from './home/components/experience/experience
 import { HomeSkillsComponent } from './home/components/skills/skills.component';
 import { HomePortfolioComponent } from './home/components/portfolio/portfolio.component';
 import { HomeContactComponent } from './home/components/contact/contact.component';
+import { ExperienceEntryComponent } from './shared/experience-entry/experience-entry.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { HomeContactComponent } from './home/components/contact/contact.componen
     HomeSkillsComponent,
     HomePortfolioComponent,
     HomeContactComponent,
+    ExperienceEntryComponent,
   ],
   imports: [
     BrowserModule,

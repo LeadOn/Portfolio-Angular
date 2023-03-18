@@ -16,7 +16,6 @@ export class ProjectCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.repository);
     if (this.repository.topics != null && this.repository.topics.length > 0) {
       this.repository.topicsTransformed = [];
 

@@ -9,7 +9,7 @@
     >
   </div>
 
-  <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-4">
+  <div class="relative overflow-x-scroll shadow-md sm:rounded-lg mt-4">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
       <thead
         class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
@@ -18,30 +18,38 @@
           <th scope="col" class="px-6 py-3">Joueur 1 / Équipe</th>
           <th scope="col" class="px-6 py-3">Score</th>
           <th scope="col" class="px-6 py-3">Joueur 2 / Équipe</th>
-          <th scope="col" class="px-6 py-3">Plateforme / Localisation</th>
+          <!-- <th scope="col" class="px-6 py-3">Plateforme / Localisation</th> -->
           <th scope="col" class="px-6 py-3">Temps forts</th>
         </tr>
       </thead>
       <tbody>
         <tr
+          *ngFor="let game of games"
           class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
         >
           <th
             scope="row"
             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >
-            Valentin VIROT / ASM
+            {{ game.player1.fullName }} / {{ game.team1 }}
           </th>
-          <td class="px-6 py-4">6 - 2</td>
-          <td class="px-6 py-4">Baptiste RENAUDOT - OL</td>
-          <td class="px-6 py-4">PC / Remote</td>
+          <td class="px-6 py-4">{{ game.score1 }} - {{ game.score2 }}</td>
+          <td class="px-6 py-4">
+            {{ game.player2.fullName }} - {{ game.team2 }}
+          </td>
+          <!-- <td class="px-6 py-4">
+            <span *ngIf="game.location == 0">PC / Remote</span
+            ><span *ngIf="game.location == 1">Xbox One / Agence</span>
+          </td> -->
           <td class="px-6 py-4 text-right">
-            <a
-              href="https://youtu.be/NyRr2nNY50s"
-              target="_blank"
-              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >Temps fort #1</a
-            >
+            <div *ngFor="let highlight of game.highlights">
+              <a
+                href="{{ highlight.url }}"
+                target="_blank"
+                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                >{{ highlight.title }} ↗</a
+              >
+            </div>
           </td>
         </tr>
       </tbody>

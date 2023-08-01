@@ -1,0 +1,19 @@
+<section
+  class="flex flex-col items-center justify-center text-white p-8 md:px-6 lg:px-32"
+  id="players"
+>
+  <div class="text-center">
+    <span class="block text-xl font-bold">Joueurs</span>
+    <span class="block mt-4"
+      >Voici la liste des joueurs actuellement enregistrés.</span
+    >
+  </div>
+
+  <div class="mt-4 grid md:grid-cols-4 gap-5">
+    <app-player-card
+      ng-if="players.length > 0"
+      *ngFor="let player of players"
+      [player]="player"
+    ></app-player-card>
+  </div>
+</section>

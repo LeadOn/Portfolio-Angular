@@ -13,7 +13,6 @@ export class FifaPlayersComponent implements OnInit {
   constructor(private client: HttpClient) {}
 
   ngOnInit(): void {
-    console.log('Oui');
     this.client
       .get(
         'https://raw.githubusercontent.com/LeadOn/Database/master/players.json'

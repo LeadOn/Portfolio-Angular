@@ -11,6 +11,7 @@
 
   <div class="mt-4 grid md:grid-cols-4 gap-5">
     <app-player-card
+      ng-if="players.length > 0"
       *ngFor="let player of players"
       [player]="player"
     ></app-player-card>

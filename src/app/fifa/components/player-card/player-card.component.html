@@ -5,7 +5,16 @@
     <img class="rounded-full" src="{{ player.imgUrl }}" width="128" />
   </div>
 
-  <div class="mt-2">
-    <span class="inline-block text-xl">{{ player.fullName }}</span>
+  <div class="mt-2 text-center">
+    <span class="inline-block text-lg">{{ player.fullName }}</span>
+    <br />
+    <span class="inline-block italic text-lg" *ngIf="player.nickname != null"
+      ><span *ngIf="player.fullName == 'Valentin VIROT'">👑</span
+      >{{ player.nickname }}
+      <span *ngIf="player.fullName == 'Valentin VIROT'">👑</span></span
+    >
+    <span class="inline-block italic text-lg" *ngIf="player.nickname == null"
+      >Pseudo inconnu</span
+    >
   </div>
 </div>

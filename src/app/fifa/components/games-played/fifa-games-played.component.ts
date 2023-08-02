@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { GamePlayed } from 'src/app/classes/GamePlayed';
+import { YuFootApiService } from 'src/app/services/yufoot-api/yufoot-api.service';
 
 @Component({
   selector: 'app-fifa-games-played',
@@ -10,15 +10,11 @@ import { GamePlayed } from 'src/app/classes/GamePlayed';
 export class FifaGamesPlayedComponent {
   games: GamePlayed[] = [];
 
-  constructor(private client: HttpClient) {}
+  constructor(private yuFootApi: YuFootApiService) {}
 
   ngOnInit(): void {
-    this.client
-      .get(
-        'https://raw.githubusercontent.com/LeadOn/Database/master/games-played.json'
-      )
-      .subscribe((data) => {
-        this.games = data as GamePlayed[];
-      });
+    this.yuFootApi.getLastGamesPlayed(10).subscribe((data) => {
+      this.games = data;
+    });
   }
 }

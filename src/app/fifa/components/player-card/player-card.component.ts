@@ -8,7 +8,7 @@ import { Player } from 'src/app/classes/Player';
 })
 export class PlayerCardComponent {
   @Input()
-  player: Player = new Player('John Doe', '');
+  player: Player = new Player();
 
   constructor() {}
 }

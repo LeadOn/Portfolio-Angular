@@ -5,7 +5,8 @@
   <div class="text-center">
     <span class="block text-xl font-bold">Matchs joués</span>
     <span class="block mt-4"
-      >Voici l'historique des matchs joués dans la YuChampion's League.</span
+      >Voici l'historique des 10 derniers matchs joués dans la YuChampion's
+      League.</span
     >
   </div>
 
@@ -15,11 +16,11 @@
         class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
       >
         <tr>
-          <th scope="col" class="px-6 py-3">Joueur 1 / Équipe</th>
+          <th scope="col" class="px-6 py-3">Équipe 1</th>
           <th scope="col" class="px-6 py-3">Score</th>
           <th scope="col" class="px-6 py-3">Joueur 2 / Équipe</th>
           <!-- <th scope="col" class="px-6 py-3">Plateforme / Localisation</th> -->
-          <th scope="col" class="px-6 py-3">Temps forts</th>
+          <!-- <th scope="col" class="px-6 py-3">Temps forts</th> -->
         </tr>
       </thead>
       <tbody>
@@ -31,17 +32,27 @@
             scope="row"
             class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >
-            {{ game.player1.fullName }} / {{ game.team1 }}
+            <p class="text-center">{{ game.team1.code }}</p>
+
+            <span *ngFor="let player of game.team1.players"
+              >{{ player.fullName }} ({{ player.nickname }})</span
+            >
           </th>
-          <td class="px-6 py-4">{{ game.score1 }} - {{ game.score2 }}</td>
           <td class="px-6 py-4">
-            {{ game.player2.fullName }} - {{ game.team2 }}
+            {{ game.team1.score }} - {{ game.team2.score }}
+          </td>
+          <td class="px-6 py-4">
+            <p class="text-center">{{ game.team2.code }}</p>
+
+            <span *ngFor="let player of game.team2.players"
+              >{{ player.fullName }} ({{ player.nickname }})</span
+            >
           </td>
           <!-- <td class="px-6 py-4">
             <span *ngIf="game.location == 0">PC / Remote</span
             ><span *ngIf="game.location == 1">Xbox One / Agence</span>
           </td> -->
-          <td class="px-6 py-4 text-right">
+          <!-- <td class="px-6 py-4 text-right">
             <div *ngFor="let highlight of game.highlights">
               <a
                 href="{{ highlight.url }}"
@@ -50,7 +61,7 @@
                 >{{ highlight.title }} ↗</a
               >
             </div>
-          </td>
+          </td> -->
         </tr>
       </tbody>
     </table>

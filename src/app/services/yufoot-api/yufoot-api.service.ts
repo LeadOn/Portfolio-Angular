@@ -16,7 +16,7 @@ export class YuFootApiService {
     return this.client.get<Player[]>(this.baseUrl + '/player');
   }
 
-  getLastFiveGames(): Observable<GamePlayed[]> {
-    return this.client.get<GamePlayed[]>(this.baseUrl + '/game/last');
+  getLastGamesPlayed(limit: number): Observable<GamePlayed[]> {
+    return this.client.get<GamePlayed[]>(this.baseUrl + '/game/last/' + limit);
   }
 }

@@ -13,7 +13,7 @@ export class FifaGamesPlayedComponent {
   constructor(private yuFootApi: YuFootApiService) {}
 
   ngOnInit(): void {
-    this.yuFootApi.getLastFiveGames().subscribe((data) => {
+    this.yuFootApi.getLastGamesPlayed(10).subscribe((data) => {
       this.games = data;
     });
   }

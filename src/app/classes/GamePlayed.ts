@@ -4,7 +4,7 @@ import { Team } from './Team';
 export class GamePlayed {
   id: number = 0;
   playedOn: Date = new Date();
-  platformId: number = 0;
+  platform: string = 'Unknown';
   team1: Team = new Team();
   team2: Team = new Team();
   highlights: Highlight[] = [];

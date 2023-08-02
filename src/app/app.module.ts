@@ -22,6 +22,8 @@ import { FifaPlayersComponent } from './fifa/components/players/fifa-players.com
 import { PlayerCardComponent } from './fifa/components/player-card/player-card.component';
 import { FifaGamesPlayedComponent } from './fifa/components/games-played/fifa-games-played.component';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FifaPlayerDetailsComponent } from './fifa/components/players/details/fifa-player-details.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { FormsModule } from '@angular/forms';
     FifaPlayersComponent,
     PlayerCardComponent,
     FifaGamesPlayedComponent,
+    FifaPlayerDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { FormsModule } from '@angular/forms';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

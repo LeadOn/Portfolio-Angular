@@ -8,7 +8,7 @@ import { GamePlayed } from 'src/app/classes/GamePlayed';
   providedIn: 'root',
 })
 export class YuFootApiService {
-  baseUrl = 'https://yufoot.valentinvirot.fr';
+  baseUrl = 'http://localhost:5184';
 
   constructor(private client: HttpClient) {}
 

@@ -17,13 +17,8 @@ import { HomePortfolioComponent } from './home/components/portfolio/portfolio.co
 import { HomeContactComponent } from './home/components/contact/contact.component';
 import { ExperienceEntryComponent } from './shared/experience-entry/experience-entry.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FifaHomeComponent } from './fifa/fifa-home.component';
-import { FifaPlayersComponent } from './fifa/components/players/fifa-players.component';
-import { PlayerCardComponent } from './fifa/components/player-card/player-card.component';
-import { FifaGamesPlayedComponent } from './fifa/components/games-played/fifa-games-played.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { FifaPlayerDetailsComponent } from './fifa/components/players/details/fifa-player-details.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +35,6 @@ import { FifaPlayerDetailsComponent } from './fifa/components/players/details/fi
     HomePortfolioComponent,
     HomeContactComponent,
     ExperienceEntryComponent,
-    FifaHomeComponent,
-    FifaPlayersComponent,
-    PlayerCardComponent,
-    FifaGamesPlayedComponent,
-    FifaPlayerDetailsComponent,
   ],
   imports: [
     BrowserModule,

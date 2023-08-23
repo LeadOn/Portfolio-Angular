@@ -15,7 +15,6 @@ import { HomeExperienceComponent } from './home/components/experience/experience
 import { HomeSkillsComponent } from './home/components/skills/skills.component';
 import { HomePortfolioComponent } from './home/components/portfolio/portfolio.component';
 import { HomeContactComponent } from './home/components/contact/contact.component';
-import { ExperienceEntryComponent } from './shared/experience-entry/experience-entry.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -34,7 +33,6 @@ import { CommonModule } from '@angular/common';
     HomeSkillsComponent,
     HomePortfolioComponent,
     HomeContactComponent,
-    ExperienceEntryComponent,
   ],
   imports: [
     BrowserModule,

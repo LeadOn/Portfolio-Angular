@@ -11,7 +11,7 @@ export class HomeExperienceComponent {
       position: false,
       title: 'Yunit - since September 2022',
       shortDesc: 'ITSM consultant',
-      desc: 'Developping new business apps / new Service Portals on ServiceNow<br />Helping clients to switch to ServiceNow from scratch',
+      desc: 'Developping new business apps / new Service Portals on ServiceNow, helping clients to switch to ServiceNow from scratch',
     },
     {
       position: true,
@@ -29,7 +29,7 @@ export class HomeExperienceComponent {
       position: true,
       title: 'IN-IT - March 2020 to August 2022',
       shortDesc: 'Junior ITSM consultant',
-      desc: 'Developping new business apps / new Service Portals on ServiceNow<br />Helping clients to switch to ServiceNow from scratch<br />Developping custom producers for Apache Kafka',
+      desc: 'Developping new business apps / new Service Portals on ServiceNow, helping clients to switch to ServiceNow from scratch, developping custom producers for Apache Kafka',
     },
     {
       position: false,

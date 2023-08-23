@@ -1,7 +1,7 @@
 <h1 align="center">LeadOn's Portfolio</h1>
 
 <hr>
-<p align="center"><img src="screenshot.png" height="400" alt="LeaderOS's logo" /></p>
+<p align="center"><img src="screenshot.webp" height="400" alt="LeaderOS's logo" /></p>
 <hr>
 
 # Description
@@ -13,7 +13,7 @@ Projects are dynamically loaded from GitHub, using GitHub's API.
 
 ## How to run it?
 
-Just type `npm install` to get all dependencies, and then use `ng serve` to run it locally.
+Just type `npm ci` to get all dependencies, and then use `ng serve` to run it locally.
 
 ## Can I use it for my own website?
 

@@ -6,9 +6,25 @@
     transition: all 0.2s ease-in-out;
   }
 
+  .project-leaderos {
+    background-image: url("../../../assets/img/leaderos.png");
+  }
+
+  .project-leadon {
+    background-image: url("../../../assets/img/leadon.png");
+  }
+
+  .project-portfolio {
+    background-image: url("../../../assets/img/portfolio.png");
+  }
+
+  .project-yugames {
+    background-image: url("../../../assets/img/yugames.png");
+  }
+
   .project:hover {
     color: white;
     background-image: none;
-    background-color: #56963b;
+    background-color: #19766d;
   }
 }

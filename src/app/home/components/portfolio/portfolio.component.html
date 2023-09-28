@@ -1,17 +1,23 @@
 <section
-  class="flex flex-col items-center justify-center text-white p-8 md:px-6 lg:px-32 xl:px-64"
+  class="flex flex-col items-center justify-center text-white m-8 md:mx-16 lg:mx-32"
   id="portfolio"
 >
-  <div class="text-center">
+  <div
+    class="text-center bg-secondaryDarker p-4 rounded-lg neomorphism-primaryDarker-2"
+  >
     <span class="block text-xl font-bold">Portfolio</span>
-    <span class="block mt-4"
-      >Here are some of my projects, directly retrieved from my
-      <a target="_blank" href="https://github.com/LeadOn">GitHub</a>
-      account.</span
+    <div
+      class="mt-4 bg-primaryDarker neomorphism-inner-primary w-full rounded-lg p-4"
     >
-    <span class="hidden md:block mt-2 text-sm"
-      >(You just have to hover each project to see it's description 😊)</span
-    >
+      <span class="block"
+        >Here are some of my projects, directly retrieved from my
+        <a target="_blank" href="https://github.com/LeadOn">GitHub</a>
+        account.</span
+      >
+      <span class="hidden md:block mt-2 text-sm"
+        >(You just have to hover each project to see it's description 😊)</span
+      >
+    </div>
   </div>
 
   <div class="text-center mt-4 text-secondary" *ngIf="apiError == true">

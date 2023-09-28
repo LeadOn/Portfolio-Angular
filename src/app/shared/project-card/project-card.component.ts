@@ -25,6 +25,8 @@ export class ProjectCardComponent implements OnInit {
         );
       });
     }
+
+    console.log(this.repository);
   }
 
   capitalizeFirstLetter(string: string) {

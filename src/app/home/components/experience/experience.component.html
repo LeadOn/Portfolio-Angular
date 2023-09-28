@@ -1,38 +1,80 @@
 <section
-  class="flex flex-col items-center justify-center text-white p-8 md:px-6 lg:px-32 xl:px-64"
+  class="flex flex-col items-center justify-center text-white m-8 md:mx-16 lg:mx-32"
   id="experience"
 >
-  <div class="text-center">
+  <div
+    class="text-center bg-secondaryDarker p-4 rounded-lg neomorphism-primaryDarker-2"
+  >
     <span class="block text-xl font-bold">My experience</span>
-    <span class="block mt-4"
+    <span
+      class="block mt-4 bg-primaryDarker neomorphism-inner-primary w-full rounded-lg p-4"
       >Here is a recap of my work experience that I've obtained since my
       diploma.</span
     >
   </div>
 
-  <div class="mt-4 p-4 rounded-lg bg-secondaryDarker">
-    <ol class="relative border-l border-white">
-      <li class="mb-10 ml-4" *ngFor="let exp of experiences">
+  <div class="mt-4 md:p-4 rounded-lg flex flex-col justify-center w-full">
+    <div class="w-full">
+      <div class="relative text-black text-sm w-full">
+        <!-- Vertical bar running through middle -->
         <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
+          class="hidden sm:block w-1 bg-secondaryDarker absolute h-full left-1/2 transform -translate-x-1/2"
         ></div>
-        <time class="mb-1 text-sm font-normal leading-none text-white">{{
-          exp.title
-        }}</time>
-        <h3 class="text-lg font-semibold text-black">
-          {{ exp.shortDesc }}
-        </h3>
-        <p class="mb-4 text-base font-normal text-white">
-          {{ exp.desc }}
-        </p>
-      </li>
-    </ol>
+
+        <div class="mt-6 sm:mt-0 sm:mb-12" *ngFor="let exp of experiences">
+          <div class="flex flex-col sm:flex-row items-center">
+            <div
+              class="flex w-full mx-auto items-center"
+              [class.justify-start]="exp.position == false"
+              [class.justify-end]="exp.position == true"
+            >
+              <div
+                class="w-full sm:w-1/2 sm:pr-8"
+                [class.sm:pr-8]="exp.position == false"
+                [class.sm:pl-8]="exp.position == true"
+              >
+                <div
+                  class="p-4 flex flex-col bg-white neomorphism-primaryDarker-2 rounded shadow"
+                >
+                  <span class="text-xl font bold">{{ exp.title }}</span>
+                  <span class="text-sm">{{ exp.shortDesc }}</span>
+                  <span class="text-xs mt-2">{{ exp.desc }}</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-full bg-secondary border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+            >
+              <img
+                src="../../../../assets/img/work.svg"
+                *ngIf="exp.type == 'work'"
+                class="h-5 w-5"
+              />
+              <img
+                src="../../../../assets/img/school.svg"
+                class="text-white"
+                *ngIf="exp.type == 'learn'"
+                class="h-5 w-5"
+              />
+              <img
+                src="../../../../assets/img/trophee.svg"
+                class="text-white"
+                *ngIf="exp.type == 'achievement'"
+                class="h-5 w-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="mt-4 lg:mt-8 text-center">
+  <div
+    class="mt-4 lg:mt-8 text-center bg-secondaryDarker p-4 rounded-lg neomorphism-primaryDarker-2"
+  >
     <span class="block"
-      >You can learn more of my experience in my curriculum vitae, available on
-      top of this page.</span
+      ><fa-icon [icon]="infoIcon" class="mr-2"></fa-icon> You can learn more of
+      my experience in my curriculum vitae, available on top of this page.</span
     >
   </div>
 </section>

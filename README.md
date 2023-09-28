@@ -1,7 +1,6 @@
 <h1 align="center">LeadOn's Portfolio</h1>
 
-<hr>
-<p align="center"><img src="screenshot.webp" height="400" alt="LeaderOS's logo" /></p>
+<p align="center"><img src="screenshot.png" alt="LeaderOS's logo" /></p>
 <hr>
 
 # Description

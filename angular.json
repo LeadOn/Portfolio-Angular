@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "leadon-portfolio:build:production"
+              "buildTarget": "leadon-portfolio:build:production"
             },
             "development": {
-              "browserTarget": "leadon-portfolio:build:development"
+              "buildTarget": "leadon-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "leadon-portfolio:build"
+            "buildTarget": "leadon-portfolio:build"
           }
         },
         "test": {

@@ -1,11 +1,13 @@
+<p align="center"><img src="./src/assets/favicon/android-chrome-512x512.png" style="width: 128px" alt="LeadOn's logo" /></p>
+
 <h1 align="center">LeadOn's Portfolio</h1>
 
-<p align="center"><img src="screenshot.webp" alt="LeaderOS's logo" /></p>
+<p align="center"><img src="screenshot.webp" alt="Portfolio's screenshot" /></p>
 <hr>
 
 # Description
 
-This project is my own portfolio, done using Angular 16 / Tailwind CSS, and will be running live on [my website](https://www.valentinvirot.fr).
+This project is my own portfolio, done using Angular 17 / Tailwind CSS, and will be running live on [my website](https://www.valentinvirot.fr).
 I'm not using every Angular aspects right now. It's really overkill to use it, especially when you check the content of it, but I've choosed to do it that way in order to have a easily maintainable solution in the long term.
 
 Projects are dynamically loaded from GitHub, using GitHub's API.

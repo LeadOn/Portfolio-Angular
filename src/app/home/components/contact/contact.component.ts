@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import {
   faExternalLinkAlt,
   faLocationArrow,
@@ -18,4 +18,5 @@ export class HomeContactComponent {
   locationIcon = faLocationArrow;
   linkedInIcon = faLinkedin;
   externalLinkIcon = faExternalLinkAlt;
+  youtubeIcon = faYoutube;
 }

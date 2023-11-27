@@ -18,6 +18,7 @@ import { HomeContactComponent } from './home/components/contact/contact.componen
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { YoutubeComponent } from './home/components/youtube/youtube.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CommonModule } from '@angular/common';
     HomeSkillsComponent,
     HomePortfolioComponent,
     HomeContactComponent,
+    YoutubeComponent,
   ],
   imports: [
     BrowserModule,

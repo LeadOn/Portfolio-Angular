@@ -12,10 +12,14 @@ export class ProjectCardComponent implements OnInit {
   repository: Repository = new Repository();
 
   arrowIcon = faExternalLinkAlt;
+  logoUrl = '';
 
   constructor() {}
 
   ngOnInit(): void {
+    this.logoUrl =
+      this.repository.html_url + '/raw/main/images/banner-portfolio.webp';
+
     if (this.repository.topics != null && this.repository.topics.length > 0) {
       this.repository.topicsTransformed = [];
 
@@ -25,8 +29,6 @@ export class ProjectCardComponent implements OnInit {
         );
       });
     }
-
-    console.log(this.repository);
   }
 
   capitalizeFirstLetter(string: string) {

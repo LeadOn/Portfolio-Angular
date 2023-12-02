@@ -23,6 +23,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "axios": "^1.6.2",
     "flowbite": "^2.2.0",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.2",

@@ -1,6 +1,12 @@
 <div
   class="project bg-secondary rounded-lg h-48 backdrop-blur-lg bg-no-repeat bg-center text-center p-8"
-  style="background-image: url('{{ logoUrl }}');"
+  [class.project-leaderos]="repository.id == 557858413"
+  [class.project-leadon]="repository.id == 692120237"
+  [class.project-portfolio]="repository.id == 331959645"
+  [class.project-wiki]="repository.id == 725505989"
+  [class.project-yugames]="
+    repository.id == 674142833 || repository.id == 209532739
+  "
 >
   <span
     class="block text-lg bold"

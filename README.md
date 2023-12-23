@@ -3,7 +3,6 @@
 <h1 align="center">LeadOn's Portfolio</h1>
 
 <p align="center"><img src="screenshot.webp" alt="Portfolio's screenshot" /></p>
-<hr>
 
 # Description
 
@@ -21,3 +20,7 @@ Just type `npm ci` to get all dependencies, and then use `ng serve` to run it lo
 If this repo is public, you can clone/fork my project and use it for your own website. Just credit me somewhere in your site / code, as a thanks for my work :)
 
 You can contact me using my [Twitter](https://twitter.com/valentin_vir) account, if you have some question about it. Have fun!
+
+## Color chart
+
+<p align="center"><img src="./images/leadon-portfolio-color-chart.png" alt="Portfolio's color chart" /></p>

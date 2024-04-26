@@ -12,8 +12,22 @@ export class HomeExperienceComponent {
     {
       position: false,
       type: 'work',
-      title: 'Yunit - since September 2022',
-      shortDesc: 'ITSM consultant',
+      title: 'Yunit - since April 2024',
+      shortDesc: 'Innovation Laboratory Manager',
+      desc: 'Managing the Innovation Laboratory, creating new applications around innovative technologies such as Generative AI, ...',
+    },
+    {
+      position: true,
+      type: 'work',
+      title: 'Yunit - since January 2024',
+      shortDesc: 'Senior Consultant',
+      desc: 'Developping new business apps / new Service Portals on ServiceNow, helping clients to switch to ServiceNow from scratch',
+    },
+    {
+      position: false,
+      type: 'work',
+      title: 'Yunit - Sept 2022 - Jan 2024',
+      shortDesc: 'Consultant',
       desc: 'Developping new business apps / new Service Portals on ServiceNow, helping clients to switch to ServiceNow from scratch',
     },
     {

@@ -16,9 +16,9 @@ import { Skill } from 'src/app/classes/Skill';
 })
 export class HomeSkillsComponent {
   skills: Skill[] = [
+    new Skill('ServiceNow', faCode),
     new Skill('C#', faCode),
     new Skill('Angular', faCode),
-    new Skill('ServiceNow', faCode),
     new Skill('Azure', faCloud),
     new Skill('Agile', faBookmark),
     new Skill('Xamarin', faMobileAlt),

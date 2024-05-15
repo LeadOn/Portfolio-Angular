@@ -18,6 +18,20 @@ export class HomeExperienceComponent {
     },
     {
       position: true,
+      type: 'achievement',
+      title: 'Yunit - May 2024',
+      shortDesc: 'Partner Sales GenAI+ Accrediation',
+      desc: 'Obtained during Knowledge 2024, Las Vegas, NV, USA.',
+    },
+    {
+      position: false,
+      type: 'learn',
+      title: 'Knowledge 2024 - May 2024',
+      shortDesc: 'ServiceNow event',
+      desc: "Discovering what's next for the ServiceNow platform, and latest innovations.",
+    },
+    {
+      position: true,
       type: 'work',
       title: 'Yunit - since January 2024',
       shortDesc: 'Senior Consultant',

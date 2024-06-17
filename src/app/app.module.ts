@@ -15,36 +15,29 @@ import { HomeExperienceComponent } from './home/components/experience/experience
 import { HomeSkillsComponent } from './home/components/skills/skills.component';
 import { HomePortfolioComponent } from './home/components/portfolio/portfolio.component';
 import { HomeContactComponent } from './home/components/contact/contact.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { YoutubeComponent } from './home/components/youtube/youtube.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    SkillCardComponent,
-    ProjectCardComponent,
-    HomeComponent,
-    HomeWelcomeComponent,
-    HomeAboutComponent,
-    HomeExperienceComponent,
-    HomeSkillsComponent,
-    HomePortfolioComponent,
-    HomeContactComponent,
-    YoutubeComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    HttpClientModule,
-    FormsModule,
-    CommonModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        NavbarComponent,
+        FooterComponent,
+        SkillCardComponent,
+        ProjectCardComponent,
+        HomeComponent,
+        HomeWelcomeComponent,
+        HomeAboutComponent,
+        HomeExperienceComponent,
+        HomeSkillsComponent,
+        HomePortfolioComponent,
+        HomeContactComponent,
+        YoutubeComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+        FormsModule,
+        CommonModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}

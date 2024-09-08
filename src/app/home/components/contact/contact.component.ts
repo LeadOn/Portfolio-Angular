@@ -4,7 +4,6 @@ import {
   faExternalLinkAlt,
   faLocationArrow,
   faMailBulk,
-  faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -13,7 +12,6 @@ import {
   styleUrls: ['./contact.component.scss'],
 })
 export class HomeContactComponent {
-  phoneIcon = faPhone;
   mailIcon = faMailBulk;
   locationIcon = faLocationArrow;
   linkedInIcon = faLinkedin;

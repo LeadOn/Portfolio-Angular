@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-experience',
@@ -8,7 +7,6 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
   standalone: false,
 })
 export class HomeExperienceComponent {
-  infoIcon = faInfoCircle;
   experiences = [
     {
       type: 'achievement',

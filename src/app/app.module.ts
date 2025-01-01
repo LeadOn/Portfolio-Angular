@@ -18,10 +18,9 @@ import { HomeComponent } from './home/home.component';
 import { HomeWelcomeComponent } from './home/components/welcome/welcome.component';
 import { HomeAboutComponent } from './home/components/about/about.component';
 import { HomeExperienceComponent } from './home/components/experience/experience.component';
-import { HomeSkillsComponent } from './home/components/skills/skills.component';
 import { HomePortfolioComponent } from './home/components/portfolio/portfolio.component';
 import { HomeContactComponent } from './home/components/contact/contact.component';
-import { YoutubeComponent } from './home/components/youtube/youtube.component';
+import { HomeCertificationsComponent } from './home/components/certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +32,9 @@ import { YoutubeComponent } from './home/components/youtube/youtube.component';
     HomeWelcomeComponent,
     HomeAboutComponent,
     HomeExperienceComponent,
-    HomeSkillsComponent,
+    HomeCertificationsComponent,
     HomePortfolioComponent,
     HomeContactComponent,
-    YoutubeComponent,
   ],
   bootstrap: [AppComponent],
   imports: [

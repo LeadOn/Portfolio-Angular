@@ -10,9 +10,10 @@ import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import { Skill } from 'src/app/classes/Skill';
 
 @Component({
-  selector: 'app-home-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss'],
+    selector: 'app-home-skills',
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss'],
+    standalone: false
 })
 export class HomeSkillsComponent {
   skills: Skill[] = [

@@ -7,9 +7,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-home-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+    selector: 'app-home-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    standalone: false
 })
 export class HomeContactComponent {
   mailIcon = faMailBulk;

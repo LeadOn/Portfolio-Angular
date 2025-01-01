@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-home-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
+    selector: 'app-home-experience',
+    templateUrl: './experience.component.html',
+    styleUrls: ['./experience.component.scss'],
+    standalone: false
 })
 export class HomeExperienceComponent {
   infoIcon = faInfoCircle;

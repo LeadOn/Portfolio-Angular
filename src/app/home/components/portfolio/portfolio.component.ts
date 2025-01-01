@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
-import { Repository } from 'src/app/classes/Repository';
-import { GithubService } from 'src/app/services/github/github.service';
+import { Repository } from 'src/app/shared/classes/Repository';
+import { GithubService } from 'src/app/shared/services/github.service';
 
 @Component({
   selector: 'app-home-portfolio',
@@ -19,7 +19,6 @@ export class HomePortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.github.getRepos().subscribe(
       (data) => {
-        console.log(data);
         this.repositories = data;
       },
       (err) => {

@@ -4,9 +4,10 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { Skill } from 'src/app/classes/Skill';
 
 @Component({
-  selector: 'app-skill-card',
-  templateUrl: './skill-card.component.html',
-  styleUrls: ['./skill-card.component.scss'],
+    selector: 'app-skill-card',
+    templateUrl: './skill-card.component.html',
+    styleUrls: ['./skill-card.component.scss'],
+    standalone: false
 })
 export class SkillCardComponent implements OnInit {
   @Input()

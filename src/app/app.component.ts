@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { initFlowbite } from 'flowbite';
 
 @Component({
@@ -8,6 +9,8 @@ import { initFlowbite } from 'flowbite';
   standalone: false,
 })
 export class AppComponent implements OnInit {
+  downloadIcon = faDownload;
+
   ngOnInit(): void {
     initFlowbite();
   }

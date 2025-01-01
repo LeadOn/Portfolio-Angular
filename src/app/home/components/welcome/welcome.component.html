@@ -1,64 +1,72 @@
 <section
-  class="flex flex-col items-center lg:items-start lg:px-6 lg:px-32 xl:px-64 justify-center text-white h-screen p-8"
   id="welcome"
+  class="flex flex-col lg:flex-row-reverse lg:divide-x-reverse lg:divide-x-2 lg:divide-gray-300 items-center space-y-8 lg:space-x-8 p-8 lg:divide-dashed xl:mt-32 2xl:mt-64"
 >
-  <div
-    class="custom-margin flex flex-col items-center lg:items-start bg-gray-800/40 p-4 lg:p-8 rounded-lg backdrop-blur-lg"
-  >
-    <div>
-      <span
-        class="block border border-2 border-secondary rounded-lg px-6 py-3 lg:text-xl"
-        >Hello, I'm</span
-      >
-    </div>
-
-    <div>
-      <span
-        class="typed-out block font-semibold text-4xl lg:text-5xl mt-3 lg:mt-10 pr-2"
-        >Valentin Virot
-      </span>
-    </div>
-
-    <span class="block text-lg lg:text-2xl mt-3 lg:mt-6 text-center"
-      >A ServiceNow Consultant / Full-Stack Developper in France.</span
-    >
-
-    <div
-      class="mt-6 lg:mt-10 flex flex-row space-x-4 lg:space-x-0 lg:w-full lg:justify-evenly"
-    >
-      <a
-        target="_blank"
-        href="../../../../assets/files/CV_Valentin_Virot_2024_2025.pdf"
-        class="block bg-secondary transition ease-in-out delay-50 hover:bg-secondaryDarker p-4 rounded-lg w-36 lg:w-48 text-center"
-        >Download CV</a
-      >
-
-      <a
-        href="#portfolio"
-        class="block bg-gray-800/40 transition ease-in-out delay-50 hover:bg-gray-400/40 hover:border-secondaryDarker border p-4 rounded-lg w-36 lg:w-48 text-center"
-        >Portfolio</a
-      >
-    </div>
+  <div class="flex justify-center items-center lg:w-1/2 xl:px-8">
+    <img
+      class="rounded-full w-72 xl:w-96 drop-shadow-lg"
+      src="assets/img/valentinvirot.webp"
+    />
   </div>
 
-  <div class="home-nav-btn flex w-full justify-center mt-32">
+  <div
+    class="flex flex-col justify-center items-center backdrop-blur-lg text-justify space-y-8 lg:p-8 lg:w-1/2"
+  >
+    <span class="text-2xl"
+      >Hi! <span class="font-bold">I'm Valentin</span>, a
+      <span class="font-bold">Full-Stack Developer</span> /
+      <span class="font-bold">ServiceNow Consultant</span> in
+      <span class="font-bold">France</span></span
+    >
+
+    <span class="text-gray-600 font-semibold text-md"
+      >As a tech-enthousiast since childhood, i've been developing and designing
+      solutions as my primary job since 2022.</span
+    >
+
+    <a
+      href="mailto:virot.valentin@gmail.com"
+      alt="Contact to button"
+      class="bg-secondary rounded-full py-4 px-8 text-white uppercase drop-shadow-md"
+      >Contact me</a
+    >
+
+    <div class="flex space-x-4">
+      <a
+        target="_blank"
+        alt="LinkedIn profile"
+        href="https://www.linkedin.com/in/valentinvirot"
+        class="border-2 border-gray-300 rounded-full w-8 h-8 flex items-center justify-center p-8 text-2xl"
+        ><fa-icon [icon]="linkedInIcon"></fa-icon
+      ></a>
+
+      <a
+        target="_blank"
+        alt="YouTube channel"
+        href="https://www.youtube.com/@valentin_vir"
+        class="border-2 border-gray-300 rounded-full w-8 h-8 flex items-center justify-center p-8 text-2xl"
+        ><fa-icon [icon]="youtubeIcon"></fa-icon
+      ></a>
+
+      <a
+        target="_blank"
+        alt="GitHub account"
+        href="https://www.github.com/LeadOn"
+        class="border-2 border-gray-300 rounded-full w-8 h-8 flex items-center justify-center p-8 text-2xl"
+        ><fa-icon [icon]="githubIcon"></fa-icon
+      ></a>
+    </div>
+
+    <span
+      ><fa-icon [icon]="jobIcon" class="mr-2 font-bold"></fa-icon> Innovation
+      Lab Manager &#64; Yunit</span
+    >
+  </div>
+
+  <div class="flex justify-center lg:hidden">
     <a
       href="#about"
-      class="border border-2 border-secondary rounded-full px-4 py-5 transition transition-all ease-in-out duration-200 hover:scale-110"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="32"
-        fill="#80B8C5"
-        class="bi bi-arrow-down animate-bounce"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-        />
-      </svg>
-    </a>
+      class="w-px h-20 border-r-2 border-dashed border-gray-300"
+    ></a>
   </div>
 </section>

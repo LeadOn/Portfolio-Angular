@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Repository } from 'src/app/classes/Repository';
-import { GithubService } from 'src/app/services/github/github.service';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { Repository } from 'src/app/shared/classes/Repository';
+import { GithubService } from 'src/app/shared/services/github.service';
 
 @Component({
-    selector: 'app-home-portfolio',
-    templateUrl: './portfolio.component.html',
-    styleUrls: ['./portfolio.component.scss'],
-    standalone: false
+  selector: 'app-home-portfolio',
+  templateUrl: './portfolio.component.html',
+  styleUrls: ['./portfolio.component.scss'],
+  standalone: false,
 })
 export class HomePortfolioComponent implements OnInit {
   repositories: Repository[] = [];
+  bookIcon = faBook;
   apiError = false;
 
   constructor(private github: GithubService) {}

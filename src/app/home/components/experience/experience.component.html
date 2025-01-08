@@ -2,7 +2,7 @@
   id="experience"
   class="flex flex-col space-y-8 lg:space-y-16 px-8 py-8 xl:py-16 2xl:py-32 border-dashed border-b-2 border-gray-300"
 >
-  <span class="text-2xl font-bold">Check out what happened in my career.</span>
+  <span class="text-2xl font-bold">Check out what happened in my career</span>
 
   <div class="flex flex-col lg:flex-row z-10 justify-center items-center">
     <div class="mt-4 md:p-4 rounded-lg flex flex-col justify-center w-full">
@@ -37,7 +37,12 @@
                 </div>
               </div>
               <div
-                class="rounded-full bg-secondary border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+                class="rounded-full border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+                [ngClass]="{
+                  'bg-agile': exp.type == 'achievement',
+                  'bg-secondary': exp.type == 'work',
+                  'bg-csharp': exp.type == 'learn'
+                }"
               >
                 <img
                   src="../../../../assets/img/work.svg"

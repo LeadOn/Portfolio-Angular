@@ -16,6 +16,12 @@ export class HomeExperienceComponent {
     },
     {
       type: 'learn',
+      title: 'Now Summit AI Paris - March 2025',
+      shortDesc: 'ServiceNow Event',
+      desc: 'Showing our experience around AI Agents, the day it goes live to clients',
+    },
+    {
+      type: 'learn',
       title: 'World Forum Paris - November 2024',
       shortDesc: 'ServiceNow Event',
       desc: "Discovering what's next for the ServiceNow platform, and latest innovations + Representing Yunit",

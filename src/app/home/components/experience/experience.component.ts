@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
+  styleUrls: ['./experience.component.css'],
   standalone: false,
 })
 export class HomeExperienceComponent {

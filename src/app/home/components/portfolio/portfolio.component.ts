@@ -6,7 +6,7 @@ import { GithubService } from 'src/app/shared/services/github.service';
 @Component({
   selector: 'app-home-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
+  styleUrls: ['./portfolio.component.css'],
   standalone: false,
 })
 export class HomePortfolioComponent implements OnInit {

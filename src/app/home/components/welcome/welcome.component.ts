@@ -9,7 +9,7 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-home-welcome',
   templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.scss'],
+  styleUrls: ['./welcome.component.css'],
   standalone: false,
 })
 export class HomeWelcomeComponent {

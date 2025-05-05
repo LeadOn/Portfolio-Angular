@@ -9,6 +9,12 @@ import { Component } from '@angular/core';
 export class HomeExperienceComponent {
   experiences = [
     {
+      type: 'learn',
+      title: 'Knowledge 2025 - May 2025',
+      shortDesc: 'ServiceNow Event',
+      desc: "Discovering what's next for the ServiceNow platform, and latest innovations.",
+    },
+    {
       type: 'achievement',
       title: 'CTA - In progress',
       shortDesc: 'Certified Technical Architect',

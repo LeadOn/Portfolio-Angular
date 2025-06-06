@@ -9,16 +9,22 @@ import { Component } from '@angular/core';
 export class HomeExperienceComponent {
   experiences = [
     {
+      type: 'achievement',
+      title: 'Certified Technical Architect - June 2025',
+      shortDesc: 'Certified Technical Architect',
+      desc: 'Validates my experience after 5 years.',
+    },
+    {
+      type: 'achievement',
+      title: 'Gen AI Accreditation - May 2025',
+      shortDesc: 'RampCamp Gen AI Accreditation',
+      desc: 'Obtained during Knowledge 2025, Las Vegas, NV, USA.',
+    },
+    {
       type: 'learn',
       title: 'Knowledge 2025 - May 2025',
       shortDesc: 'ServiceNow Event',
       desc: "Discovering what's next for the ServiceNow platform, and latest innovations.",
-    },
-    {
-      type: 'achievement',
-      title: 'CTA - In progress',
-      shortDesc: 'Certified Technical Architect',
-      desc: 'Currently subscribed to the CTA program, and working on obtaining it.',
     },
     {
       type: 'learn',

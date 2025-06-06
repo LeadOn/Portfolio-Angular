@@ -6,7 +6,7 @@
 
 # Description
 
-This project is my own portfolio, done using Angular 19 / TailwindCSS v4, and will be running live on [my website](https://www.valentinvirot.fr).
+This project is my own portfolio, done using Angular 20 / TailwindCSS v4, and will be running live on [my website](https://www.valentinvirot.fr).
 I'm not using every Angular aspects right now. It's really overkill to use it, especially when you check the content of it, but I've choosed to do it that way in order to have a easily maintainable solution in the long term.
 
 Projects are dynamically loaded from GitHub, using GitHub's API.

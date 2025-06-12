@@ -11,7 +11,7 @@ export class HomeExperienceComponent {
     {
       type: 'achievement',
       title: 'Certified Technical Architect - June 2025',
-      shortDesc: 'Certified Technical Architect',
+      shortDesc: 'Certified Technical Architect certification',
       desc: 'Validates my experience after 5 years.',
     },
     {

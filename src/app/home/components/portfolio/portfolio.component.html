@@ -1,66 +1,73 @@
 <section
   id="portfolio"
   class="flex flex-col space-y-8 lg:space-y-16 px-8 py-8 xl:py-16 2xl:py-32 border-dashed border-b-2 border-gray-300"
->
+  >
   <span class="text-2xl font-bold">Here is some of my home-made projects.</span>
 
   <div
     class="flex flex-col lg:flex-row z-10 justify-center space-y-4 lg:space-y-0 lg:flex-wrap lg:items-stretch"
-  >
-    <div class="text-center mt-4 text-red-600" *ngIf="apiError == true">
-      <span class="block"
-        >An error happened while getting projects from GitHub. Please try again
-        later.</span
-      >
-    </div>
-
-    <div
-      *ngFor="let repository of repositories"
-      class="flex flex-col bg-white border-2 border-gray-300 rounded-lg p-4 space-y-2 w-full lg:w-1/3 mx-2 grow"
     >
-      <div class="flex space-x-2 items-center text-xl font-bold">
-        <fa-icon class="text-gray-600" [icon]="bookIcon"></fa-icon>
-        <a
-          href="{{ repository.html_url }}"
-          target="_blank"
-          *ngIf="repository.name != null"
-          class="text-blue-700"
-          >{{ repository.name }}</a
-        >
-        <a
-          href="{{ repository.html_url }}"
-          target="_blank"
-          *ngIf="repository.name == null"
-          class="text-blue-700"
-          >No name found</a
-        >
-      </div>
+    @if (apiError == true) {
+      <div class="text-center mt-4 text-red-600">
+        <span class="block"
+          >An error happened while getting projects from GitHub. Please try again
+          later.</span
+          >
+        </div>
+      }
 
-      <div class="text-sm text-gray-500">
-        <span *ngIf="repository.description != null">{{
-          repository.description
-        }}</span>
-
-        <span *ngIf="repository.description == null"
-          >No description found.</span
-        >
-      </div>
-
-      <div class="flex space-x-2 flex-wrap">
-        <span
-          *ngFor="let topic of repository.topics"
-          class="bg-blue-300 rounded-full px-4 text-sm text-blue-600 mt-1"
-          >{{ topic | uppercase }}</span
-        >
-      </div>
-
-      <div
-        class="flex items-center space-x-2 pt-4"
-        *ngIf="repository.language != null"
-      >
-        <div class="w-4 h-4 bg-green-500 rounded-full"></div>
-        <span>{{ repository.language }}</span>
-      </div>
-    </div>
-  </div>
-</section>
+      @for (repository of repositories; track repository) {
+        <div
+          class="flex flex-col bg-white border-2 border-gray-300 rounded-lg p-4 space-y-2 w-full lg:w-1/3 mx-2 grow"
+          >
+          <div class="flex space-x-2 items-center text-xl font-bold">
+            <fa-icon class="text-gray-600" [icon]="bookIcon"></fa-icon>
+            @if (repository.name != null) {
+              <a
+                href="{{ repository.html_url }}"
+                target="_blank"
+                class="text-blue-700"
+                >{{ repository.name }}</a
+                >
+              }
+              @if (repository.name == null) {
+                <a
+                  href="{{ repository.html_url }}"
+                  target="_blank"
+                  class="text-blue-700"
+                  >No name found</a
+                  >
+                }
+              </div>
+              <div class="text-sm text-gray-500">
+                @if (repository.description != null) {
+                  <span>{{
+                    repository.description
+                  }}</span>
+                }
+                @if (repository.description == null) {
+                  <span
+                    >No description found.</span
+                    >
+                  }
+                </div>
+                <div class="flex space-x-2 flex-wrap">
+                  @for (topic of repository.topics; track topic) {
+                    <span
+                      class="bg-blue-300 rounded-full px-4 text-sm text-blue-600 mt-1"
+                      >{{ topic | uppercase }}</span
+                      >
+                    }
+                  </div>
+                  @if (repository.language != null) {
+                    <div
+                      class="flex items-center space-x-2 pt-4"
+                      >
+                      <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                      <span>{{ repository.language }}</span>
+                    </div>
+                  }
+                </div>
+              }
+            </div>
+          </section>

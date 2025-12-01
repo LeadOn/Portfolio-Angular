@@ -1,7 +1,7 @@
 <section
   id="experience"
   class="flex flex-col space-y-8 lg:space-y-16 px-8 py-8 xl:py-16 2xl:py-32 border-dashed border-b-2 border-gray-300"
->
+  >
   <span class="text-2xl font-bold">Check out what happened in my career</span>
 
   <div class="flex flex-col lg:flex-row z-10 justify-center items-center">
@@ -12,58 +12,62 @@
             class="hidden sm:block w-1 bg-secondaryDarker absolute h-full left-1/2 transform -translate-x-1/2"
           ></div>
 
-          <div
-            class="mt-6 sm:mt-0 sm:mb-12"
-            *ngFor="let exp of experiences; odd as isOdd; even as isEven"
-          >
-            <div class="flex flex-col sm:flex-row items-center">
-              <div
-                class="flex w-full mx-auto items-center"
-                [class.justify-start]="isEven"
-                [class.justify-end]="isOdd"
+          @for (exp of experiences; track exp; let isOdd = $odd; let isEven = $even) {
+            <div
+              class="mt-6 sm:mt-0 sm:mb-12"
               >
+              <div class="flex flex-col sm:flex-row items-center">
                 <div
-                  class="w-full sm:w-1/2 sm:pr-8"
-                  [class.sm:pr-8]="isEven"
-                  [class.sm:pl-8]="isOdd"
-                >
-                  <div
-                    class="p-4 flex flex-col bg-white neomorphism-primaryDarker-2 rounded shadow"
+                  class="flex w-full mx-auto items-center"
+                  [class.justify-start]="isEven"
+                  [class.justify-end]="isOdd"
                   >
-                    <span class="text-xl font bold">{{ exp.title }}</span>
-                    <span class="text-sm">{{ exp.shortDesc }}</span>
-                    <span class="text-xs mt-2">{{ exp.desc }}</span>
+                  <div
+                    class="w-full sm:w-1/2 sm:pr-8"
+                    [class.sm:pr-8]="isEven"
+                    [class.sm:pl-8]="isOdd"
+                    >
+                    <div
+                      class="p-4 flex flex-col bg-white neomorphism-primaryDarker-2 rounded shadow"
+                      >
+                      <span class="text-xl font bold">{{ exp.title }}</span>
+                      <span class="text-sm">{{ exp.shortDesc }}</span>
+                      <span class="text-xs mt-2">{{ exp.desc }}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="rounded-full border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+                <div
+                  class="rounded-full border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
                 [ngClass]="{
                   'bg-agile': exp.type == 'achievement',
                   'bg-secondary': exp.type == 'work',
                   'bg-csharp': exp.type == 'learn'
                 }"
-              >
-                <img
-                  src="../../../../assets/img/work.svg"
-                  *ngIf="exp.type == 'work'"
-                  class="h-5 w-5"
-                />
-                <img
-                  src="../../../../assets/img/school.svg"
-                  class="text-white"
-                  *ngIf="exp.type == 'learn'"
-                  class="h-5 w-5"
-                />
-                <img
-                  src="../../../../assets/img/trophee.svg"
-                  class="text-white"
-                  *ngIf="exp.type == 'achievement'"
-                  class="h-5 w-5"
-                />
+                  >
+                  @if (exp.type == 'work') {
+                    <img
+                      src="../../../../assets/img/work.svg"
+                      class="h-5 w-5"
+                      />
+                  }
+                  @if (exp.type == 'learn') {
+                    <img
+                      src="../../../../assets/img/school.svg"
+                      class="text-white"
+                      class="h-5 w-5"
+                      />
+                  }
+                  @if (exp.type == 'achievement') {
+                    <img
+                      src="../../../../assets/img/trophee.svg"
+                      class="text-white"
+                      class="h-5 w-5"
+                      />
+                  }
+                </div>
               </div>
             </div>
-          </div>
+          }
         </div>
       </div>
     </div>

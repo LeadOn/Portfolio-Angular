@@ -10,6 +10,18 @@ export class HomeExperienceComponent {
   experiences = [
     {
       type: 'learn',
+      title: 'Knowledge 2026 - May 2026',
+      shortDesc: 'ServiceNow Event',
+      desc: "Discovering what's next for the ServiceNow platform, and latest innovations.",
+    },
+    {
+      type: 'learn',
+      title: 'AI Summit Paris - March 2026',
+      shortDesc: 'ServiceNow Event',
+      desc: 'Showing our experience using AI Voice Agents to optimize your Helpdesk',
+    },
+    {
+      type: 'learn',
       title: 'World Forum Paris - November 2025',
       shortDesc: 'ServiceNow Event',
       desc: 'Showing our experience upgrading ReleaseOps using Generative AI',

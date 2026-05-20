@@ -1,72 +1,85 @@
 <section
   id="welcome"
-  class="flex flex-col lg:flex-row-reverse lg:divide-x-reverse lg:divide-x-2 lg:divide-gray-300 items-center space-y-8 lg:space-x-8 p-8 lg:divide-dashed xl:mt-16 2xl:mt-32 border-dashed border-b-2 border-gray-300"
+  class="relative flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 px-8 xl:px-16 2xl:px-32 py-12 xl:py-16 border-b border-gray-200"
 >
-  <div class="flex justify-center items-center lg:w-1/2 xl:px-8">
-    <img
-      class="rounded-full w-72 xl:w-96 drop-shadow-lg"
-      src="assets/img/valentinvirot.webp"
-    />
-  </div>
+  <!-- Text content -->
+  <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-7 max-w-2xl z-10">
 
-  <div
-    class="flex flex-col justify-center items-center z-50 rounded-lg text-center space-y-8 lg:p-8 lg:w-1/2"
-  >
-    <span class="text-2xl"
-      >Hi! <span class="font-bold">I'm Valentin</span>, a
-      <span class="font-bold">ServiceNow CTA / Senior Consultant</span> /
-      <span class="font-bold">Full-Stack Developer</span> in
-      <span class="font-bold">France</span></span
-    >
+    <!-- Status badge -->
+    <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-now bg-now/10 border border-now/25 px-3 py-1.5 rounded-full">
+      <span class="w-1.5 h-1.5 rounded-full bg-now pulse-dot"></span>
+      Open to opportunities
+    </span>
 
-    <span class="text-gray-600 font-semibold text-md"
-      >As a tech-enthousiast since childhood, i've been developing and designing
-      solutions as my primary job since 2020.</span
-    >
-
-    <a
-      href="mailto:virot.valentin@gmail.com"
-      alt="Contact to button"
-      class="bg-secondary rounded-full px-4 text-white py-2 text-lg drop-shadow-md"
-      >Contact me</a
-    >
-
-    <div class="flex space-x-4">
-      <a
-        target="_blank"
-        alt="LinkedIn profile"
-        href="https://www.linkedin.com/in/valentinvirot"
-        class="border-2 border-[#3d66bd] rounded-full w-8 h-8 flex items-center justify-center p-8 text-2xl backdrop-blur-lg bg-gray-300/10 text-[#3d66bd]"
-        ><fa-icon [icon]="linkedInIcon"></fa-icon
-      ></a>
-
-      <a
-        target="_blank"
-        alt="YouTube channel"
-        href="https://www.youtube.com/@valentin_vir"
-        class="border-2 border-[#db4036] rounded-full w-8 h-8 flex items-center justify-center p-8 text-2xl backdrop-blur-lg bg-gray-300/10 text-[#db4036]"
-        ><fa-icon [icon]="youtubeIcon"></fa-icon
-      ></a>
-
-      <a
-        target="_blank"
-        alt="GitHub account"
-        href="https://www.github.com/LeadOn"
-        class="border-2 border-black rounded-full w-8 h-8 flex items-center justify-center p-8 text-2xl backdrop-blur-lg bg-gray-300/10"
-        ><fa-icon [icon]="githubIcon"></fa-icon
-      ></a>
+    <!-- Heading -->
+    <div class="space-y-2">
+      <h1 class="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
+        Hi, I'm<br /><span class="text-secondary">Valentin</span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-gray-400 font-medium leading-snug">
+        ServiceNow CTA &amp; Full-Stack Developer
+      </p>
     </div>
 
-    <span
-      ><fa-icon [icon]="jobIcon" class="mr-2 font-bold"></fa-icon> SN CTA /
-      Innovation Lab Manager &#64; Yunit</span
-    >
+    <!-- Bio -->
+    <p class="text-base lg:text-lg text-gray-500 leading-relaxed max-w-xl">
+      Tech-enthusiast since childhood — I've been building and designing solutions
+      since 2020, from <strong class="font-semibold text-gray-700">ServiceNow</strong>
+      platforms to <strong class="font-semibold text-gray-700">full-stack applications</strong>.
+    </p>
+
+    <!-- Current position -->
+    <div class="inline-flex items-center gap-2 text-sm bg-white border border-gray-200 shadow-sm px-4 py-2.5 rounded-xl">
+      <fa-icon [icon]="jobIcon" class="text-secondary"></fa-icon>
+      <span class="text-gray-500">Innovation Lab Manager
+        <span class="font-semibold text-gray-800">@ Yunit</span>
+      </span>
+    </div>
+
+    <!-- CTA -->
+    <a
+      href="mailto:virot.valentin@gmail.com"
+      aria-label="Send an email to Valentin Virot"
+      class="inline-flex items-center gap-2 bg-secondary text-white px-8 py-3.5 rounded-xl font-semibold text-base hover:bg-secondaryDarker transition-colors duration-200 shadow-lg"
+    >Contact me</a>
+
+    <!-- Social links -->
+    <div class="flex gap-3">
+      <a target="_blank" rel="noopener noreferrer"
+         aria-label="Visit Valentin Virot's LinkedIn profile"
+         href="https://www.linkedin.com/in/valentinvirot"
+         class="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-500 hover:border-[#3d66bd] hover:text-[#3d66bd] hover:shadow-sm transition-all duration-200">
+        <fa-icon [icon]="linkedInIcon"></fa-icon>
+      </a>
+      <a target="_blank" rel="noopener noreferrer"
+         aria-label="Visit Valentin Virot's YouTube channel"
+         href="https://www.youtube.com/@valentin_vir"
+         class="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-500 hover:border-[#db4036] hover:text-[#db4036] hover:shadow-sm transition-all duration-200">
+        <fa-icon [icon]="youtubeIcon"></fa-icon>
+      </a>
+      <a target="_blank" rel="noopener noreferrer"
+         aria-label="Visit Valentin Virot's GitHub account"
+         href="https://www.github.com/LeadOn"
+         class="w-10 h-10 flex items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-500 hover:border-gray-800 hover:text-gray-800 hover:shadow-sm transition-all duration-200">
+        <fa-icon [icon]="githubIcon"></fa-icon>
+      </a>
+    </div>
+
   </div>
 
-  <div class="flex justify-center lg:hidden">
-    <a
-      href="#about"
-      class="w-px h-20 border-r-2 border-dashed border-gray-300"
-    ></a>
+  <!-- Profile photo -->
+  <div class="shrink-0 flex justify-center items-center z-10">
+    <div class="relative">
+      <!-- Ambient glow -->
+      <div class="absolute -inset-6 rounded-full bg-secondary/20 blur-2xl"></div>
+      <img
+        class="relative rounded-full w-56 sm:w-72 xl:w-80 ring-4 ring-white shadow-2xl"
+        src="assets/img/valentinvirot.webp"
+        alt="Portrait of Valentin Virot"
+        width="320"
+        height="320"
+      />
+    </div>
   </div>
+
 </section>

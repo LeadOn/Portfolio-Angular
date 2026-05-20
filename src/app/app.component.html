@@ -1,38 +1,36 @@
-<nav class="border-b-2 border-gray-300 drop-shadow-lg h-20">
-  <div class="max-w-screen-2xl mx-auto h-full px-6 flex justify-between items-center">
-    <div class="flex flex-row justify-center items-center space-x-2">
-      <img
-        src="assets/favicon/android-chrome-512x512.png"
-        alt="logo"
-        class="w-8 drop-shadow-md"
-      />
+<nav class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-gray-100 h-16">
+  <div class="max-w-screen-2xl mx-auto h-full px-6 flex justify-between items-center gap-4">
 
-      <span class="text-xl font-bold">Valentin VIROT</span>
+    <!-- Brand -->
+    <a href="#welcome" class="flex items-center gap-2.5 shrink-0">
+      <img src="assets/favicon/android-chrome-512x512.png" alt="Valentin Virot logo" class="w-7 h-7" />
+      <span class="text-sm font-semibold text-gray-900 tracking-tight">Valentin Virot</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <div class="hidden md:flex items-center gap-0.5">
+      <a href="#about"      class="text-sm font-medium text-gray-500 px-3 py-1.5 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-150">About</a>
+      <a href="#experience" class="text-sm font-medium text-gray-500 px-3 py-1.5 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-150">Experience</a>
+      <a href="#portfolio"  class="text-sm font-medium text-gray-500 px-3 py-1.5 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-150">Projects</a>
+      <a href="#skills"     class="text-sm font-medium text-gray-500 px-3 py-1.5 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-150">Certifications</a>
     </div>
 
-    <div>
-      <a
-        class="bg-secondary rounded-full px-4 text-white py-2 text-sm drop-shadow-md"
-        target="_blank"
-        href="assets/files/CV_Valentin_Virot_2026.pdf"
-        alt="Link to download Valentin Virot's CV."
-        ><fa-icon [icon]="downloadIcon"></fa-icon>
-        <span class="ml-2 md:text-md lg:text-lg"
-          ><span class="hidden md:inline-block md:mr-1">Download</span
-          >Resume</span
-        ></a
-      >
-    </div>
+    <!-- CTA -->
+    <a
+      class="flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-secondaryDarker transition-colors duration-200 shrink-0"
+      target="_blank"
+      href="assets/files/CV_Valentin_Virot_2026.pdf"
+      aria-label="Download Valentin Virot's resume PDF"
+    >
+      <fa-icon [icon]="downloadIcon"></fa-icon>
+      <span class="hidden sm:inline">Resume</span>
+    </a>
+
   </div>
 </nav>
 
 <div class="max-w-screen-2xl mx-auto relative overflow-hidden">
-  <div
-    class="absolute top-16 -left-24 w-96 h-96 bg-now rounded-full opacity-60 -z-50 blur-xl"
-  ></div>
-
-  <div
-    class="absolute top-96 -right-24 w-96 h-96 bg-azure rounded-full opacity-60 -z-50 blur-xl"
-  ></div>
+  <div class="absolute top-0 -left-32 w-lg h-128 bg-now rounded-full opacity-25 -z-10 blur-3xl pointer-events-none"></div>
+  <div class="absolute top-160 -right-32 w-lg h-128 bg-azure rounded-full opacity-20 -z-10 blur-3xl pointer-events-none"></div>
   <router-outlet></router-outlet>
 </div>

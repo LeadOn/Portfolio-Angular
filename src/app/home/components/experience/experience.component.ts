@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faClock, faCertificate, faCalendarDays, faBuilding } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-experience',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomeExperienceComponent {
+  stats = [
+    { value: '6+', label: 'Years of ServiceNow', icon: faClock },
+    { value: '7',  label: 'Certifications', icon: faCertificate },
+    { value: '8',  label: 'Events attended', icon: faCalendarDays },
+    { value: '2',  label: 'Companies', icon: faBuilding },
+  ];
+
   experiences = [
     {
       type: 'learn',

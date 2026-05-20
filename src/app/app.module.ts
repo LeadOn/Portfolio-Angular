@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
+import { ScrollAnimateDirective } from './shared/directives/scroll-animate.directive';
 
 import { HomeComponent } from './home/home.component';
 import { HomeWelcomeComponent } from './home/components/welcome/welcome.component';
@@ -27,6 +28,7 @@ import { HomePortfolioComponent } from './home/components/portfolio/portfolio.co
     HomeExperienceComponent,
     HomeCertificationsComponent,
     HomePortfolioComponent,
+    ScrollAnimateDirective,
   ],
   bootstrap: [AppComponent],
   imports: [

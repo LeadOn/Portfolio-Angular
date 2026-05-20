@@ -1,89 +1,103 @@
 <section
   id="about"
-  class="flex flex-col space-y-8 lg:space-y-16 px-8 py-8 xl:py-16 2xl:py-32 border-dashed border-b-2 border-gray-300"
+  appScrollAnimate
+  class="flex flex-col gap-12 px-8 xl:px-16 2xl:px-32 py-16 xl:py-24 border-b border-gray-200"
 >
-  <span class="text-2xl font-bold"
-    >Read about why I always wanted to be a developer / technical architect
-  </span>
 
-  <div class="flex flex-col lg:flex-row z-10 justify-center items-center">
-    <div class="text-lg flex flex-col space-y-4 lg:w-1/2">
-      <span
-        >Since I was young, I always wanted to learn how computer worked or even
-        how our world runs. It wasn't curiosity, it was a real passion, and it
-        still is. Here are some hard skills that i've learned during my studies
-        / work experience.</span
-      >
+  <!-- Section header -->
+  <div class="space-y-2">
+    <span class="block text-xs font-medium text-gray-400 uppercase tracking-widest">About me</span>
+    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">Passion for tech since day&nbsp;one</h2>
+  </div>
 
-      <span
-        >During my life, I started learning and experiencing a large variety of
-        technologies, not only in development, but also in networking, hardware,
-        ...</span
-      >
+  <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
-      <span
-        >Using all of this, i'm now able to handle huge projects, that requires
-        Dev/Ops knowledge with no problem what so ever.</span
-      >
+    <!-- Bio -->
+    <div class="flex flex-col gap-5 lg:w-1/2 text-base lg:text-lg text-gray-500 leading-relaxed">
+      <p>Since I was young, I always wanted to learn how computers worked — or even how our world runs. It wasn't mere curiosity, it was a real <strong class="font-semibold text-gray-700">passion</strong>, and it still is.</p>
+      <p>I've learned and experienced a large variety of technologies: not only development, but also networking, hardware, cloud infrastructure, and more.</p>
+      <p>Using all of this, I'm now able to handle large-scale projects requiring <strong class="font-semibold text-gray-700">Dev/Ops knowledge</strong> end-to-end.</p>
     </div>
 
-    <div
-      class="mt-8 lg:mt-0 lg:w-1/2 p-4 lg:mx-32 bg-gray-300/30 backdrop-blur-lg w-full rounded-lg"
-    >
-      <span class="block"
-        >ServiceNow (CTA) - 6 years
-        <span
-          title="ITSM/SecOps/App Developper/Portal and more!"
-          class="text-gray-600"
-          ><fa-icon [icon]="infoIcon"></fa-icon></span
-      ></span>
-      <div class="w-full bg-white rounded-full h-2.5 mb-4">
-        <div class="bg-now h-2.5 rounded-full" style="width: 95%"></div>
+    <!-- Skills -->
+    <div class="lg:w-1/2 w-full flex flex-col gap-5">
+
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-1.5">
+            <span class="font-semibold text-gray-800 text-sm">ServiceNow (CTA)</span>
+            <span title="ITSM/SecOps/App Developer/Portal and more!" class="text-gray-400 cursor-help text-xs">
+              <fa-icon [icon]="infoIcon"></fa-icon>
+            </span>
+          </div>
+          <span class="text-xs font-medium text-gray-400">6 years</span>
+        </div>
+        <div class="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+          <div class="skill-bar-fill bg-now h-1.5 rounded-full" style="--skill-width: 95%"></div>
+        </div>
       </div>
 
-      <span class="block"
-        >Agile - 6 years
-        <span
-          title="Multiple projects on various tools (Azure DevOps, ServiceNow Agile, ...)"
-          class="text-gray-600"
-          ><fa-icon [icon]="infoIcon"></fa-icon></span
-      ></span>
-      <div class="w-full bg-white rounded-full h-2.5 mb-4">
-        <div class="bg-agile h-2.5 rounded-full" style="width: 95%"></div>
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-1.5">
+            <span class="font-semibold text-gray-800 text-sm">Agile</span>
+            <span title="Multiple projects on various tools (Azure DevOps, ServiceNow Agile, ...)" class="text-gray-400 cursor-help text-xs">
+              <fa-icon [icon]="infoIcon"></fa-icon>
+            </span>
+          </div>
+          <span class="text-xs font-medium text-gray-400">6 years</span>
+        </div>
+        <div class="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+          <div class="skill-bar-fill bg-agile h-1.5 rounded-full" style="--skill-width: 95%"></div>
+        </div>
       </div>
 
-      <span class="block"
-        >C# - 4.5 years
-        <span
-          title="ASP.NET APIs/Gateways/EF Core/NuGet packages"
-          class="text-gray-600"
-          ><fa-icon [icon]="infoIcon"></fa-icon></span
-      ></span>
-      <div class="w-full bg-white rounded-full h-2.5 mb-4">
-        <div class="bg-csharp h-2.5 rounded-full" style="width: 80%"></div>
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-1.5">
+            <span class="font-semibold text-gray-800 text-sm">C#</span>
+            <span title="ASP.NET APIs/Gateways/EF Core/NuGet packages" class="text-gray-400 cursor-help text-xs">
+              <fa-icon [icon]="infoIcon"></fa-icon>
+            </span>
+          </div>
+          <span class="text-xs font-medium text-gray-400">4.5 years</span>
+        </div>
+        <div class="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+          <div class="skill-bar-fill bg-csharp h-1.5 rounded-full" style="--skill-width: 80%"></div>
+        </div>
       </div>
 
-      <span class="block"
-        >Microsoft Azure - 4 years
-        <span
-          title="Functions/Cognitive Services/Kubernetes"
-          class="text-gray-600"
-          ><fa-icon [icon]="infoIcon"></fa-icon></span
-      ></span>
-      <div class="w-full bg-white rounded-full h-2.5 mb-4">
-        <div class="bg-azure h-2.5 rounded-full" style="width: 70%"></div>
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-1.5">
+            <span class="font-semibold text-gray-800 text-sm">Microsoft Azure</span>
+            <span title="Functions/Cognitive Services/Kubernetes" class="text-gray-400 cursor-help text-xs">
+              <fa-icon [icon]="infoIcon"></fa-icon>
+            </span>
+          </div>
+          <span class="text-xs font-medium text-gray-400">4 years</span>
+        </div>
+        <div class="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+          <div class="skill-bar-fill bg-azure h-1.5 rounded-full" style="--skill-width: 70%"></div>
+        </div>
       </div>
 
-      <span class="block"
-        >Docker / Kubernetes - 4 years
-        <span
-          title="Dockerfile/Compose/K8S clusters with Pod management"
-          class="text-gray-600"
-          ><fa-icon [icon]="infoIcon"></fa-icon></span
-      ></span>
-      <div class="w-full bg-white rounded-full h-2.5 mb-4">
-        <div class="bg-red-800 h-2.5 rounded-full" style="width: 70%"></div>
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-1.5">
+            <span class="font-semibold text-gray-800 text-sm">Docker / Kubernetes</span>
+            <span title="Dockerfile/Compose/K8S clusters with Pod management" class="text-gray-400 cursor-help text-xs">
+              <fa-icon [icon]="infoIcon"></fa-icon>
+            </span>
+          </div>
+          <span class="text-xs font-medium text-gray-400">4 years</span>
+        </div>
+        <div class="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+          <div class="skill-bar-fill bg-red-700 h-1.5 rounded-full" style="--skill-width: 70%"></div>
+        </div>
       </div>
+
     </div>
   </div>
+
 </section>

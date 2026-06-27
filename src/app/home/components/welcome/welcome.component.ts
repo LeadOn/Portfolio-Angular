@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {
   faGithub,
   faLinkedin,
@@ -10,6 +10,7 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
   selector: 'app-home-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class HomeWelcomeComponent {

@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
-import { Repository } from 'src/app/shared/classes/Repository';
-import { GithubService } from 'src/app/shared/services/github.service';
+import { Repository } from '../../../shared/classes/Repository';
+import { GithubService } from '../../../shared/services/github.service';
 
 @Component({
   selector: 'app-home-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class HomePortfolioComponent implements OnInit {
@@ -24,7 +25,7 @@ export class HomePortfolioComponent implements OnInit {
       (err) => {
         console.error(err);
         this.apiError = true;
-      }
+      },
     );
   }
 }

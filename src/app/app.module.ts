@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {
   provideHttpClient,
   withInterceptorsFromDi,
+  withXhr
 } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -38,6 +39,6 @@ import { HomePortfolioComponent } from './home/components/portfolio/portfolio.co
     FormsModule,
     CommonModule,
   ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
+  providers: [provideHttpClient(withXhr(), withInterceptorsFromDi())],
 })
 export class AppModule {}

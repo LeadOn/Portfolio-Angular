@@ -1,21 +1,39 @@
-import { Component } from '@angular/core';
-import { faClock, faCertificate, faCalendarDays, faBuilding } from '@fortawesome/free-solid-svg-icons';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import {
+  faClock,
+  faCertificate,
+  faCalendarDays,
+  faBuilding,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class HomeExperienceComponent {
   stats = [
     { value: '6+', label: 'Years of ServiceNow', icon: faClock },
-    { value: '7',  label: 'Certifications', icon: faCertificate },
-    { value: '8',  label: 'Events attended', icon: faCalendarDays },
-    { value: '2',  label: 'Companies', icon: faBuilding },
+    { value: '7', label: 'Certifications', icon: faCertificate },
+    { value: '8', label: 'Events attended', icon: faCalendarDays },
+    { value: '2', label: 'Companies', icon: faBuilding },
   ];
 
   experiences = [
+    {
+      type: 'learn',
+      title: 'Hackathon AI Paris - July 2026',
+      shortDesc: 'ServiceNow Event',
+      desc: "Building innovative solutions using ServiceNow's Build Agent, and utilizing AI to optimize processes.",
+    },
+    {
+      type: 'achievement',
+      title: 'CIS DF-CMDB - June 2025',
+      shortDesc: 'Data Foundations / CMDB certification',
+      desc: 'Unlocking new pre-requisites added in the 2026 certification program.',
+    },
     {
       type: 'learn',
       title: 'Knowledge 2026 - May 2026',

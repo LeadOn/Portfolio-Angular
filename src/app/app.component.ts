@@ -11,6 +11,15 @@ import { initFlowbite } from 'flowbite';
 })
 export class AppComponent implements OnInit {
   downloadIcon = faDownload;
+  isCvOverlayOpen = false;
+
+  openCvOverlay(): void {
+    this.isCvOverlayOpen = true;
+  }
+
+  closeCvOverlay(): void {
+    this.isCvOverlayOpen = false;
+  }
 
   ngOnInit(): void {
     initFlowbite();

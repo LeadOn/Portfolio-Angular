@@ -23,10 +23,10 @@ export class HomeExperienceComponent {
 
   experiences = [
     {
-      type: 'learn',
-      title: 'Hackathon AI Paris - July 2026',
-      shortDesc: 'ServiceNow Event',
-      desc: "Building innovative solutions using ServiceNow's Build Agent, and utilizing AI to optimize processes.",
+      type: 'achievement',
+      title: 'Hackathon AI ServiceNow 2026 Winner - July 2026',
+      shortDesc: 'Won beside of Bouygues Telecom',
+      desc: "Won the Hackathon 2026 by building an innovative solution with ServiceNow's Build Agent and AI-driven process optimization, supported by two Bouygues Telecom teammates.",
     },
     {
       type: 'achievement',

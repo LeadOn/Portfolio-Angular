@@ -21,6 +21,12 @@ export class AppComponent implements OnInit {
     this.isCvOverlayOpen = false;
   }
 
+  // Defer closing so the <a download> stays in the DOM until the browser has started the download,
+  // otherwise Chrome loses the filename and saves the file under a GUID without extension.
+  closeCvOverlayAfterDownload(): void {
+    setTimeout(() => this.closeCvOverlay());
+  }
+
   ngOnInit(): void {
     initFlowbite();
   }

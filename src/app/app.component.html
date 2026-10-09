@@ -46,7 +46,7 @@
           class="flex items-center justify-center gap-2 bg-secondary text-white px-4 py-3 rounded-xl text-sm font-semibold hover:bg-secondaryDarker transition-colors duration-200"
           href="assets/files/CV_Valentin_Virot_2026_FR.pdf"
           download="CV_Valentin_Virot_2026_FR.pdf"
-          (click)="closeCvOverlay()"
+          (click)="closeCvOverlayAfterDownload()"
           aria-label="Download Valentin Virot's French resume PDF"
         >
           <fa-icon [icon]="downloadIcon"></fa-icon>
@@ -57,7 +57,7 @@
           class="flex items-center justify-center gap-2 bg-white text-secondary border border-secondary/25 px-4 py-3 rounded-xl text-sm font-semibold hover:bg-secondary/5 transition-colors duration-200"
           href="assets/files/CV_Valentin_Virot_2026_EN.pdf"
           download="CV_Valentin_Virot_2026_EN.pdf"
-          (click)="closeCvOverlay()"
+          (click)="closeCvOverlayAfterDownload()"
           aria-label="Download Valentin Virot's English resume PDF"
         >
           <fa-icon [icon]="downloadIcon"></fa-icon>
